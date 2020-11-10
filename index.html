@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+     <script src="marked.js"></script>
+     <script src="index.js"></script>
+
+</head>
+<body onload="setDefault()">
+    
+    <div class="container-fluid my-container">
+
+        <div class="row">
+            <div class="col text-center header">
+                <h1>MarkDown Previewer By LayoBright</h1>
+                <!-- <p>Freecodecamp projects</p> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 editor">
+                <h2 class="text-center">Editor</h2>
+                <div class="form-group">
+                    <textarea style="background:#151c58;" id="editor" onkeyup="updatePreview()" class="form-control flex-grow-1"></textarea>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 preview">
+                <h2 class="text-center">Preview</h2>
+                <div id="preview" class="previewer"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center footer">
+                <p>Freecodecamp projects</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
